@@ -1,0 +1,48 @@
+body {
+	background: #212529;
+	color: #a0a1a3;
+}
+
+.wrapper {
+	padding: 20px 10px;
+}
+
+.card {
+	background: #272b2f;
+	min-height: 205px;
+	margin-bottom: 20px;
+}
+
+.card .card-body p {
+	min-height: 70px;
+}
+
+.btn.btn-primary {
+	background: #C62828;
+	border-color: #C62828;
+	position: relative;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.loading, .loading:hover {
+	color: #C62828;
+}
+ 
+.loading:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top-color: #C62828;
+  animation: spinner .6s linear infinite;
+}

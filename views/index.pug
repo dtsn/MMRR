@@ -1,0 +1,32 @@
+extends layout
+
+block content
+
+	div(class="container-fluid")
+		div(class="wrapper")
+			div(class="row")
+				div(class="col-12")
+					h3 Mulberry Model Railroad 🚂
+			div(class="row")
+
+				each effect in config
+					div(class="col-xs-12 col-sm-6 col-md-3")
+						div(class="card")
+							div(class="card-body")
+								h5(class="card-title")= effect.name
+									p= effect.description
+									div(class="btn btn-primary action" data-path="fx/" + effect.name + "/play") Play
+									each control in effect.controls
+										div(class="btn btn-primary action" data-path="fx/" + effect.name + "/" + control)= control
+		
+
+			div(class="row")
+				div(class="col-12")
+					h3 Actions
+
+				div(class="col-xs-12 col-sm-6 col-md-3")
+					div(class="card")
+						div(class="card-body")
+							h5(class="card-title") Restart the App
+							p Restart the entire app
+							div(class="btn btn-primary action" data-path="restart") Restart App
