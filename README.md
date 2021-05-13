@@ -146,5 +146,5 @@ Then start the app
 PM2 then provides a script to load this on boot using `pm2 startup systemd`. You then need to copy the generated command and run it. Then run `pm2 save`.
 
 ## Enclosure
-I have mounted all these components into an enclosure complete with an anker power pack. This gives me about 5 hours of use.=
-![](images/enclosure.png)
+I have mounted all these components into an enclosure complete with an anker power pack. This gives me about 5 hours of use.
+![](images/enclosure.jpg)
